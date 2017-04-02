@@ -3,7 +3,7 @@
         <div class="col-md-3 left_col menu_fixed">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title">
-                    <a class="site_title"><i class="fa fa-star"></i> <span>URSS</span></a>
+                    <a class="site_title"><span>RSS Agregator</span></a>
                 </div>
 
                 <div class="clearfix"></div>
@@ -21,7 +21,7 @@
 
                             </li>
                             <li id="feed_visitor" class="current-page active">
-                                <a href="#/"><i class="fa fa-rss"></i> Consulter un Feed <span class="fa"></span></a>
+                                <a href="#/"><i class="fa fa-rss"></i> Consulter un flux RSS<span class="fa"></span></a>
                             </li>
                             <li id="login_row_minified">
                                 <a href="#login"><i class="fa fa-sign-in"></i> Se connecter <span class="fa"></span></a>
@@ -61,7 +61,7 @@
             <!-- top tiles -->
             <div class="page-title">
                 <div class="title_left">
-                    <h1>Mon actualité</h1>
+                    <h1>Mes flux RSS</h1>
 
                 </div>
                 <div class="title_right">
@@ -143,10 +143,10 @@
 
             </div>
             <div style="text-shadow:none;padding: 2px;color:#ffffff; text-align: center;" class="alert alert-danger alert-dismissible fade in" role="alert" ng-show="error == 'true'">
-                Lien du flux RSS invalide
+		Oops, ce lien semble invalide :/
             </div>
             <div ng-if="articles.length == 0">
-                Vous n'avez aucun flux à afficher
+                Oops, il semble que vous n'ayez aucun flux pour le moment :/
             </div>
 
             <!-- /page content -->
