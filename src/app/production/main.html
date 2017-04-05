@@ -113,9 +113,10 @@
 
                       <div class="col-md-9 col-sm-9 col-xs-12">
                           <blockquote>
-                              <p ng-bind="{{article.data.pubDate}} * 1000 | date:'MM-dd-yyyy HH:mm:ss'"></p>
-			      <p>test</p>
-			      <p [innerHTML]="article.data.description"></p>
+                              <p ng-bind="{{article.data.pubDate}} * 1000 | date:'MM-dd-yyyy HH:mm:ss'">
+                              </p>
+
+                              <p>{{article.data.description}}</p>
                               <p><button ng-click="test(article.data.link)" type="button " class="btn btn-round btn-warning" data-toggle="modal" data-target="#myModal">Voir l'article</button>
                                   <a type="button " href="{{article.data.link}}" class="btn btn-round btn-warning">Accéder au site</a></p>
 
